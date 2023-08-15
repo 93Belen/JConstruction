@@ -20,9 +20,9 @@ export default function Header(){
         <header className='bg-blue flex justify-between text-white font-mono py-[18px] px-[40px] items-center'>
             <h1 className='font-bold'>JAY'S CONSTRUCTION</h1>
             <div className='hidden md:flex justify-around font-medium gap-[20px]'>
-                <Link href=''>About</Link>
-                <Link href=''>Contact</Link>
-                <Link href=''>Services</Link>
+                <Link className='border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href=''>About</Link>
+                <Link className='border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href=''>Contact</Link>
+                <Link className='border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href=''>Services</Link>
                 <select className='bg-blue text-white appearance-none' name="" id="">
                     <option value="">English</option>
                     <option value="">Español</option>
