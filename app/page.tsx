@@ -1,6 +1,5 @@
 import ContactButton from "./components/ContactButton";
 import { anton } from "./layout";
-import Image from "next/image";
 import { AiFillCar } from 'react-icons/ai'
 
 
@@ -24,13 +23,6 @@ export default function Home() {
       {/* MOBILE HERO */}
       <section className='flex flex-col md:hidden'>
         <div className='h-[16rem] bg-[url("/home-hero.png")] bg-cover bg-center'>
-        {/* <Image
-        className='h-full'
-        src={"/home-hero.png"}
-        width={2500}
-        height={2500}
-        alt=''
-        /> */}
         </div>
         <div className='flex flex-col gap-4 px-4 pb-20 pt-10'>
             <h1 className={`text-orange text-[3.5rem] font-bold ${anton.className}`}>We connect you with
@@ -67,6 +59,40 @@ export default function Home() {
               </div>
           </div>
           </div>
+      </section>
+      {/* BY THE NUMBERS */}
+      <section className='bg-[url("/smoke.png")] bg-bottom bg-no-repeat bg-cover h-fit pt-10 md:pt-20 px-5'>
+        <h2 className={`${anton.className} text-orange md:text-[4rem] text-[3.5rem] lg:pl-40`}>BY THE NUMBERS</h2>
+        <div className='flex flex-col md:flex-row justify-center xl:w-[80%] xl:gap-20 gap-6 max-w-[1500px] m-auto md:py-14'>
+          <div className='text-white font-bold font-mono'>
+            <h3 className='text-[4.5rem]'>
+              <span className='text-orange font-bold'>+</span>
+              200
+            </h3>
+            <h4 className='font-bold text-[1.25rem]'>Satisfied customers</h4>
+            <p className='text-[1rem]'>Over the last 3 years, we have worked with over 
+              two hundred clients across the metro. </p>
+          </div>
+          <div className='text-white font-bold font-mono'>
+            <h3 className='text-[4.5rem]'>
+              <span className='text-orange font-bold'>+</span>
+              500
+            </h3>
+            <h4 className='font-bold text-[1.25rem]'>Satisfied customers</h4>
+            <p className='text-[1rem]'>Over the last 3 years, we have worked with over 
+              two hundred clients across the metro. </p>
+          </div>
+          <div className='text-white font-bold font-mono'>
+            <h3 className='text-[4.5rem]'>
+              100
+              <span className='text-orange font-bold'>%</span>
+            
+            </h3>
+            <h4 className='font-bold text-[1.25rem]'>Satisfied customers</h4>
+            <p className='text-[1rem]'>Over the last 3 years, we have worked with over 
+              two hundred clients across the metro. </p>
+          </div>
+        </div>
       </section>
     </main>
   )
