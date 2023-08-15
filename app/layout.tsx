@@ -1,6 +1,8 @@
 import './globals.css'
 import { Anton, Montserrat } from 'next/font/google'
 import Header from './components/Header'
+import Footer from './components/Footer'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const anton = Anton({
   subsets: ['latin'],
@@ -27,9 +29,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={montserrar.className}>
+    <html lang="en" className={`${anton.className} min-h-screen`}>
+      <body className={`${montserrar.className} min-h-screen`}>
       <Header />
-      <body className={anton.className}>{children}</body>
+        {children}
+      <Footer />
+      </body>
     </html>
   )
 }
