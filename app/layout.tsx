@@ -3,6 +3,7 @@ import { Anton, Montserrat } from 'next/font/google'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Hydrate from './components/Hydrate';
 
 export const anton = Anton({
   subsets: ['latin'],
@@ -31,11 +32,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={` in-h-screen`}>
       <body className={`${montserrar.className} min-h-screen bg-blue`}>
+      <Hydrate>
       <Header />
       <div className={`h-[70%]`}>
         {children}
         </div>
       <Footer />
+      </Hydrate>
       </body>
     </html>
   )
