@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#accordion div{
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+}
+#accordion div h2{
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  border: none;
+}
+#accordion div h2::after{
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  border: none;
+}
+#accordion div h2 button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  border: none;
+}
+
+#accordion div h2 button::after{
+  color: white;
+}
