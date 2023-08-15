@@ -1,5 +1,6 @@
 import ContactButton from "./components/ContactButton";
 import { anton } from "./layout";
+import Image from "next/image";
 
 
 export default function Home() {
@@ -21,7 +22,22 @@ export default function Home() {
 
       {/* MOBILE HERO */}
       <section className='flex flex-col md:hidden'>
-
+        <div>
+        <Image
+        src={"/home-hero.png"}
+        width={2500}
+        height={2500}
+        alt=''
+        />
+        </div>
+        <div className='flex flex-col gap-4 px-4 py-20'>
+            <h1 className={`text-orange text-[3.5rem] font-bold ${anton.className}`}>We connect you with
+            the best in town
+            </h1>
+            <h2 className='text-white font-mono w-[70%]'>Our experienced and reliable contractors will help
+              you with your concrete service needs.</h2>
+              <ContactButton/>
+        </div>
       </section>
     </main>
   )
