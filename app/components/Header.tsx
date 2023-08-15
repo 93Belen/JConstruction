@@ -70,7 +70,11 @@ export default function Header(){
                     cx="150" cy="150" r="10" fill="white" />
                 </motion.svg>
             </AnimatePresence>
-                <div className={`${isOpen ? 'flex' : 'hidden'} bg-blue top-[59px] left-0 absolute w-full flex-col h-[94.2vh] justify-around text-center items-center p-2 pb-10`}>
+            <AnimatePresence>
+                <motion.div layout
+                initial={{ opacity: 0}}
+                animate={{opacity: isOpen ? 1 : 0}}
+                 className={`flex bg-blue top-[59px] left-0 absolute w-full flex-col h-[94.2vh] justify-around text-center items-center p-2 pb-10`}>
                 <Link href=''>About</Link>
                 <Link href=''>Contact</Link>
                 <Link href=''>Services</Link>
@@ -78,7 +82,8 @@ export default function Header(){
                     <option value="">English</option>
                     <option value="">Español</option>
                 </select>
-                </div>
+                </motion.div>
+            </AnimatePresence>
             </div>
         </header>
     )
