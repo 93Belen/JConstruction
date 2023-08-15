@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header(){
     const [isOpen, setIsOpen] = useState<boolean>(false)
-    const [dotsVisible, setDotsVisible] = useState(true);
     
     const toggleMwenu = () => {
         setIsOpen((state) => !state)
@@ -18,7 +17,7 @@ export default function Header(){
 
     return (
         <header className='bg-blue flex justify-between text-white font-mono py-[18px] md:px-[2rem] px-[1rem] items-center'>
-            <h1 className='font-bold text-[1rem] md:text-[1.5rem]'>JAY'S CONSTRUCTION</h1>
+            <Link className='text-white no-underline' href='/'><h1 className='font-bold text-[1rem] md:text-[1.5rem]'>JAY'S CONSTRUCTION</h1></Link>
             <div className='hidden md:flex justify-around font-medium gap-[20px] text-[1rem]'>
                 <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href=''>About</Link>
                 <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href=''>Contact</Link>
@@ -68,7 +67,7 @@ export default function Header(){
                 <motion.div layout
                 initial={{ opacity: 0}}
                 animate={{opacity: isOpen ? 1 : 0}}
-                 className={`flex bg-blue top-[59px] left-0 absolute w-full flex-col h-[94.2vh] justify-around text-center items-center p-2 pb-10`}>
+                 className={`flex bg-blue top-[59px] left-0 absolute w-full flex-col h-[80vh] justify-around text-center items-center p-2 pb-10 text-[2rem]`}>
                 <Link className='text-white no-underline' href=''>About</Link>
                 <Link className='text-white no-underline' href=''>Contact</Link>
                 <Link className='text-white no-underline' href=''>Services</Link>

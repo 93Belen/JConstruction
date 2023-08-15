@@ -17,8 +17,8 @@ module.exports = {
       'white': '#FFFFFF'
     },
     borderRadius: {
-      'sm': '4',
-      'md': '8'
+      'sm': '4px',
+      'md': '8px'
     },
     fontFamily: {
       'sans': ['var(--font-anton)'],
