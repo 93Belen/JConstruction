@@ -18,7 +18,7 @@ export default function Header(){
 
     return (
         <header className='bg-blue flex justify-between text-white font-mono py-[18px] md:px-[2rem] px-[1rem] items-center'>
-            <h1 className='font-bold text-[1rem] md:text-[1.5rem]'>JAY'S CONSTRUCTION</h1>
+            <Link className='text-white no-underline' href='/'><h1 className='font-bold text-[1rem] md:text-[1.5rem]'>JAY'S CONSTRUCTION</h1></Link>
             <div className='hidden md:flex justify-around font-medium gap-[20px] text-[1rem]'>
                 <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href=''>About</Link>
                 <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href=''>Contact</Link>

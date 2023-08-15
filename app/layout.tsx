@@ -4,14 +4,14 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const anton = Anton({
+export const anton = Anton({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400'],
   variable: '--font-anton'
 })
 
-const montserrar = Montserrat({
+export const montserrar = Montserrat({
   subsets: ['latin'],
   display: 'swap',
   weight: ['500', '700'],
@@ -29,10 +29,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${anton.className} min-h-screen`}>
-      <body className={`${montserrar.className} min-h-screen`}>
+    <html lang="en" className={` in-h-screen`}>
+      <body className={`${montserrar.className} min-h-screen bg-blue`}>
       <Header />
+      <div className={`h-[70%]`}>
         {children}
+        </div>
       <Footer />
       </body>
     </html>
