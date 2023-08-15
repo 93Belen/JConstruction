@@ -21,8 +21,8 @@ module.exports = {
       'md': '8'
     },
     fontFamily: {
-      'sans': ['anton'],
-      'mono': ['montserrat']
+      'sans': ['var(--font-anton)'],
+      'mono': ['var(--font-montserrat)']
     },
     fontWeight: {
       'medium': '500',
