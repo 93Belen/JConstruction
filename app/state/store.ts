@@ -9,7 +9,7 @@ type store = {
 export const useWebStore = create<store>()(
   persist(
     (set) => ({
-      language: 'english',
+      language: '',
       toggleLanguage: (payload: string) => set(() => ({ language: payload })),
       
     }),

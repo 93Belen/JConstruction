@@ -6,15 +6,18 @@ import { ChangeEvent, useState } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import { useWebStore } from "../state/store";
 
+
 export default function Header(){
     const [isOpen, setIsOpen] = useState<boolean>(false)
+
     const store = useWebStore()
+    const language = store.language;
 
     const changeLanguage = (e: ChangeEvent<HTMLSelectElement>) => {
         const language = e.target.value;
-        store.toggleLanguage(language)
-        
+        store.toggleLanguage(language)       
     }
+
     console.log(store.language)
     
 
@@ -32,7 +35,7 @@ export default function Header(){
                 <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href='/about'>About</Link>
                 <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href='/contact'>Contact</Link>
                 <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href='/services'>Services</Link>
-                <select onChange={changeLanguage} className='bg-blue text-white appearance-none' name="" id="">
+                <select value={language} onChange={changeLanguage} className='bg-blue text-white appearance-none' name="" id="">
                     <option value="english">English</option>
                     <option value="spanish">Español</option>
                 </select>
@@ -81,7 +84,7 @@ export default function Header(){
                 <Link className='text-white no-underline' href='/about'>About</Link>
                 <Link className='text-white no-underline' href='/contact'>Contact</Link>
                 <Link className='text-white no-underline' href='/services'>Services</Link>
-                <select onChange={changeLanguage} className='bg-blue text-white appearance-none' name="" id="">
+                <select value={language} onChange={changeLanguage} className='bg-blue text-white appearance-none' name="" id="">
                     <option value="english">English</option>
                     <option value="spanish">Español</option>
                 </select>
