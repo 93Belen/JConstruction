@@ -7,10 +7,18 @@ import Accordion from 'react-bootstrap/Accordion';
 import { FiMail, FiPhone } from 'react-icons/fi'
 import { AiOutlineForm } from 'react-icons/ai'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
+import { ChangeEvent, useState } from "react";
+import { useWebStore } from "../state/store";
 
 
 export default function Footer(){
+    const store = useWebStore()
 
+    const changeLanguage = (e: ChangeEvent<HTMLSelectElement>) => {
+        const language = e.target.value;
+        store.toggleLanguage(language)
+        
+    }
 
     return (
         <section className='bg-blue h-fit text-white font-mono lg:px-[9rem] md:px-[3rem] px-[1rem] pt-[5rem] box-border w-full'>
@@ -39,9 +47,9 @@ export default function Footer(){
                 </div>
                 <div>
                     <h3 className='font-bold text-[1.25rem]'>LANGUAGE</h3>
-                    <select className='bg-blue text-white appearance-none border-white border-1 pb-[4rem] px-4 py-1 rounded-md' name="" id="">
-                    <option value="">English</option>
-                    <option value="">Español</option>
+                    <select onChange={changeLanguage} className='bg-blue text-white appearance-none border-white border-1 pb-[4rem] px-4 py-1 rounded-md' name="" id="">
+                    <option value="english">English</option>
+                    <option value="spanish">Español</option>
                 </select>
                 </div>
             </div>
@@ -76,9 +84,9 @@ export default function Footer(){
             </Accordion.Item>
       <div className='pl-5 pt-4'>
         <p className='font-bold'>LANGUAGE</p>
-        <select className='bg-blue text-white appearance-none border-white border-1 pb-[4rem] px-4 py-1 rounded-md' name="" id="">
-            <option value="">English</option>
-            <option value="">Español</option>
+        <select onChange={changeLanguage} className='bg-blue text-white appearance-none border-white border-1 pb-[4rem] px-4 py-1 rounded-md' name="" id="">
+            <option value="english">English</option>
+            <option value="spanish">Español</option>
         </select>
                 </div>
     </Accordion>
