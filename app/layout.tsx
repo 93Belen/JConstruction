@@ -19,7 +19,7 @@ export const montserrar = Montserrat({
   variable: '--font-montserrat'
 })
 
-export const metadata = {
+const metadata = {
   title: 'Jays Construction',
   description: '',
 }

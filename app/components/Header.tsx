@@ -2,16 +2,31 @@
 
 
 import Link from "next/link";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
+import { useWebStore } from "../state/store";
+import {selectedLanguage} from "components/content/header";
+
 
 export default function Header(){
     const [isOpen, setIsOpen] = useState<boolean>(false)
+
+    const store = useWebStore()
+    const language = store.language;
+
+    const changeLanguage = (e: ChangeEvent<HTMLSelectElement>) => {
+        const language = e.target.value;
+        store.toggleLanguage(language)       
+    }
+
+    console.log(store.language)
     
+
     const toggleMwenu = () => {
         setIsOpen((state) => !state)
     }
 
+    const content = language === 'spanish' ? selectedLanguage.spanish : selectedLanguage.english
 
 
 
@@ -19,12 +34,12 @@ export default function Header(){
         <header className='bg-blue flex justify-between text-white font-mono py-[18px] md:px-[2rem] px-[1rem] items-center'>
             <Link className='text-white no-underline' href='/'><h1 className='font-bold text-[1rem] md:text-[1.5rem]'>JAY'S CONSTRUCTION</h1></Link>
             <div className='hidden md:flex justify-around font-medium gap-[20px] text-[1rem]'>
-                <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href='/about'>About</Link>
-                <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href='/contact'>Contact</Link>
-                <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href='/services'>Services</Link>
-                <select className='bg-blue text-white appearance-none' name="" id="">
-                    <option value="">English</option>
-                    <option value="">Español</option>
+                <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href='/about'>{content.about}</Link>
+                <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href='/contact'>{content.contact}</Link>
+                <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href='/services'>{content.services}</Link>
+                <select value={language} onChange={changeLanguage} className='bg-blue text-white appearance-none' name="" id="">
+                    <option value="english">English</option>
+                    <option value="spanish">Español</option>
                 </select>
             </div>
             <div className='block md:hidden'>
@@ -68,12 +83,12 @@ export default function Header(){
                 initial={{ opacity: 0}}
                 animate={{opacity: isOpen ? 1 : 0}}
                  className={`flex bg-blue top-[59px] left-0 absolute w-full flex-col h-[80vh] justify-around text-center items-center p-2 pb-10 text-[2rem]`}>
-                <Link className='text-white no-underline' href='/about'>About</Link>
-                <Link className='text-white no-underline' href='/contact'>Contact</Link>
-                <Link className='text-white no-underline' href='/services'>Services</Link>
-                <select className='bg-blue text-white appearance-none' name="" id="">
-                    <option value="">English</option>
-                    <option value="">Español</option>
+                <Link className='text-white no-underline' href='/about'>{content.about}</Link>
+                <Link className='text-white no-underline' href='/contact'>{content.contact}</Link>
+                <Link className='text-white no-underline' href='/services'>{content.services}</Link>
+                <select value={language} onChange={changeLanguage} className='bg-blue text-white appearance-none' name="" id="">
+                    <option value="english">English</option>
+                    <option value="spanish">Español</option>
                 </select>
                 </motion.div>
             </AnimatePresence>
