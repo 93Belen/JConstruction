@@ -23,7 +23,7 @@ const spanish = {
     contact: {
         h1: 'CONTÁCTENOS',
         h2: "¡HABLEMOS!",
-        h3: '¿Tienes proyectos de concreto y necesitas ayuda? Por favor, contáctanos. Nos encantaría ayudarle'
+        h3: '¿Necesita ayuda con su proyecto? Póngase en contacto con nosotros. Nos encantaría ayudarle'
     },
     services: {
         h1: 'SERVICIOS',
