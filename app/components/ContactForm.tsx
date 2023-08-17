@@ -19,7 +19,7 @@ export default function ContacForm(){
                 <input className='border-2 border-black rounded-md w-full p-1' type="email" />
                 <label htmlFor="">{content.message}</label>
                 <textarea className='border-2 border-black rounded-md w-full p-1' name="" id="" cols={10} rows={10}></textarea>
-                <button className='text-white bg-orange rounded-md py-[0.625rem] px-[2.5rem] text-[1.25rem] w-[10rem] self-center'>Submit</button>
+                <button className='text-white bg-orange rounded-md py-[0.625rem] px-[2.5rem] text-[1.25rem] w-[10rem] self-center'>{content.button}</button>
             </form>
         </section>
     )

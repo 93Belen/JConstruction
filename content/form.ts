@@ -1,13 +1,15 @@
 const spanish = {
     name: "Nombre",
     email: "Correo Electrónico",
-    message: "Mensaje"
+    message: "Mensaje",
+    button: "Enviar"
 }
 
  const english = {
     name: "Name",
     email: "Email",
-    message: "Message"
+    message: "Message",
+    button: 'Submit'
 }
 
 export const selectedLanguage = {
