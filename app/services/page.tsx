@@ -3,6 +3,7 @@
 import { anton } from "../layout";
 import { useWebStore } from "../state/store";
 import { selectedLanguage } from "components/content/headers";
+import { selectedLanguage as textcontent } from "components/content/text/services";
 
 import { AiFillCar } from "react-icons/ai";
 import ContactButtonOrange from "../components/ContactButtonOrange";
@@ -11,6 +12,7 @@ export default function Services(){
     const store = useWebStore()
     const language = store.language
     const contentHeader = language === 'spanish' ? selectedLanguage.spanish : selectedLanguage.english;
+    const content = language === 'spanish' ? textcontent.spanish : textcontent.english
 
     return (
         <main>

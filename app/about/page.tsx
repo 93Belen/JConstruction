@@ -4,12 +4,13 @@ import { anton } from "../layout"
 import ContactButtonOrange from '../components/ContactButtonOrange'
 import { selectedLanguage as selectedLanguageHeader } from "components/content/headers"
 import { useWebStore } from "../state/store"
-
+import { selectedLanguage } from "components/content/text/about"
 
 export default function About(){
     const store = useWebStore();
     const language = store.language
     const contentHeader = language === "spanish" ? selectedLanguageHeader.spanish: selectedLanguageHeader.english
+    const content = language === 'spanish' ? selectedLanguageHeader.spanish : selectedLanguageHeader.english
 
     return (
         <main>

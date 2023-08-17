@@ -5,12 +5,15 @@ import { anton } from "./layout";
 import { AiFillCar } from 'react-icons/ai'
 import { selectedLanguage as headers } from "components/content/headers";
 import { useWebStore } from "./state/store";
+import { selectedLanguage } from "components/content/text/home";
 
 
 export default function Home() {
   const store = useWebStore()
   const language = store.language
   const contentHeader = language === 'spanish' ? headers.spanish : headers.english
+  const content = language === 'spanish' ? selectedLanguage.spanish : selectedLanguage.english
+
 
 
   return (
