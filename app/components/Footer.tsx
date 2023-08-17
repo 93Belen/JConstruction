@@ -61,17 +61,14 @@ export default function Footer(){
             <Accordion.Item eventKey="0">
                 <Accordion.Header className='text-[1rem] font-bold'>JAY'S CONSTRUCTION</Accordion.Header>
                 <Accordion.Body>
-                <p >Jays Construction is a<br />
-                    construction company <br />
-                    that matches customers<br />
-                    to the right contractor.</p>
+                <p >{content.intro}</p>
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
                 <Accordion.Header className='text-[1rem] font-bold'>CONTACT US</Accordion.Header>
                 <Accordion.Body>
                     <p className='flex items-center gap-2'><FiMail/> jaime@gmail.com</p>
-                    <p className='flex items-center gap-2'><AiOutlineForm/> contact form</p>
+                    <p className='flex items-center gap-2'><AiOutlineForm/>{content.contact.contactForm}</p>
                     <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Metro</p>
                     <p className='flex items-center gap-2'><FiPhone/> 913.555.5555</p>
                 </Accordion.Body>
@@ -79,9 +76,9 @@ export default function Footer(){
             <Accordion.Item eventKey="3">
                 <Accordion.Header className='text-[1rem] font-bold'>NAVIGATION</Accordion.Header>
                 <Accordion.Body className='flex flex-col gap-4'>
-                    <Link className='text-white no-underline' href=''>About</Link>
-                    <Link className='text-white no-underline' href=''>Contact</Link>
-                    <Link className='text-white no-underline' href=''>Services</Link>
+                    <Link className='text-white no-underline' href=''>{contentNav.about}</Link>
+                    <Link className='text-white no-underline' href=''>{contentNav.contact}</Link>
+                    <Link className='text-white no-underline' href=''>{contentNav.services}</Link>
                 </Accordion.Body>
             </Accordion.Item>
       <div className='pl-5 pt-4'>

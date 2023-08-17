@@ -9,7 +9,7 @@ const spanish = {
         h2: {
             a: 'QUIÉNES SOMOS',
             b: "NUESTRO PROCESO",
-            c: "QUÊ HACEMOS"
+            c: "QUÉ HACEMOS"
         },
         h3: "¿Necesita ayuda con su próximo proyecto?",
         process: {
