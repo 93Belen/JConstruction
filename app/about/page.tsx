@@ -9,9 +9,9 @@ export default function About(){
                 <h1 className={`text-white ${anton.className} text-[4rem]`}>ABOUT US</h1>
             </section>
             <section className='flex flex-col md:flex-row'>
-                <div className='bg-blue md:bg-white p-6 2xl:px-20 md:py-20 2xl:py-28'>
-                    <h2 className={`${anton.className} text-white lg:text-[4rem] text-[3rem] md:text-blue`}>WHO WE ARE</h2>
-                    <p className='text-white md:text-black'>We are a local-owned business that stared to connect you to the best fit. During covid, we noticed that people needed a service to help connect people to trustworthy and reliable contractors who also are an expert in their field.</p>
+            <div className='bg-blue md:bg-white p-6 2xl:px-20 md:py-20 2xl:py-28'>
+                    <h2 className={`${anton.className} lg:text-[4rem] text-[3rem] md:text-blue min-[0px]:text-white`}>WHO WE ARE</h2>
+                    <p className=' md:text-black min-[0px]:text-white'>We are a local-owned business that stared to connect you to the best fit. During covid, we noticed that people needed a service to help connect people to trustworthy and reliable contractors who also are an expert in their field.</p>
                 </div>
                 <div className='bg-white p-6 md:order-last 2xl:px-20 md:py-20 2xl:py-28'>
                     <h2 className={`${anton.className} text-blue lg:text-[4rem] text-[3rem]`}>WHAT WE DO</h2>
