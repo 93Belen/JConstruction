@@ -81,12 +81,11 @@ export default function Header(){
             <AnimatePresence>
                 <motion.div layout
                 initial={{ opacity: 0}}
-                onClick={toggleMwenu}
                 animate={{opacity: isOpen ? 1 : 0}}
                  className={`flex bg-blue top-[59px] left-0 absolute w-full flex-col h-[80vh] justify-around text-center items-center p-2 pb-10 text-[2rem]`}>
-                <Link className='text-white no-underline' href='/about'>{content.about}</Link>
-                <Link className='text-white no-underline' href='/contact'>{content.contact}</Link>
-                <Link className='text-white no-underline' href='/services'>{content.services}</Link>
+                <Link onClick={toggleMwenu} className='text-white no-underline' href='/about'>{content.about}</Link>
+                <Link onClick={toggleMwenu} className='text-white no-underline' href='/contact'>{content.contact}</Link>
+                <Link onClick={toggleMwenu} className='text-white no-underline' href='/services'>{content.services}</Link>
                 <select value={language} onChange={changeLanguage} className='bg-blue text-white appearance-none' name="" id="">
                     <option value="english">English</option>
                     <option value="spanish">Español</option>
