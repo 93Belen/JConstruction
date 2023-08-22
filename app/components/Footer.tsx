@@ -1,6 +1,5 @@
 'use client'
 
-import Link from "next/link";
 import Logo from "./Logo";
 import { BsInstagram } from 'react-icons/bs'
 import Accordion from 'react-bootstrap/Accordion';
@@ -11,6 +10,7 @@ import { ChangeEvent } from "react";
 import { useWebStore } from "../state/store";
 import { selectedLanguage } from "components/content/footer";
 import { selectedLanguage as headerSelectedLanguage } from "components/content/header";
+import Link from "next/link";
 
 export default function Footer(){
     const store = useWebStore()
@@ -35,20 +35,20 @@ export default function Footer(){
 
                 </div>
                 <div>
-                    <h3 className='font-bold text-[1.25rem]'>CONTACT US</h3>
-                    <p className='flex items-center gap-2'><FiMail/> jaime@gmail.com</p>
-                    <p className='flex items-center gap-2'><AiOutlineForm/>{content.contact.contactForm}</p>
+                    <h3 className='font-bold text-[1.25rem]'>{content.contact.name}</h3>
+                    <p className='flex items-center gap-2'><FiMail/> jaysconstructionkc@gmail.com</p>
+                    <p className='flex items-center gap-2'> <AiOutlineForm/> <Link className='text-white no-underline' href='/contact'>{content.contact.contactForm} </Link> </p>
                     <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Metro</p>
-                    <p className='flex items-center gap-2'><FiPhone/> 913.555.5555</p>
+                    <p className='flex items-center gap-2'><FiPhone/>  (913) 221-4088</p>
                 </div>
                 <div className='flex flex-col gap-2'>
-                    <h3 className='font-bold text-[1.25rem]'>NAVIGATION</h3>
+                    <h3 className='font-bold text-[1.25rem]'>{content.navigation.name}</h3>
                     <Link className='text-white no-underline' href=''>{contentNav.about}</Link>
                     <Link className='text-white no-underline' href=''>{contentNav.contact}</Link>
                     <Link className='text-white no-underline' href=''>{contentNav.services}</Link>
                 </div>
                 <div>
-                    <h3 className='font-bold text-[1.25rem]'>LANGUAGE</h3>
+                    <h3 className='font-bold text-[1.25rem]'>{content.language.name}</h3>
                     <select value={language} onChange={changeLanguage} className='bg-blue text-white appearance-none border-white border-1 pb-[4rem] px-4 py-1 rounded-md' name="" id="">
                     <option defaultChecked={language === "english"} value="english">English</option>
                     <option defaultChecked={language === "spanish"} value="spanish">Español</option>
@@ -68,7 +68,7 @@ export default function Footer(){
                 <Accordion.Header className='text-[1rem] font-bold'>CONTACT US</Accordion.Header>
                 <Accordion.Body>
                     <p className='flex items-center gap-2'><FiMail/> jaime@gmail.com</p>
-                    <p className='flex items-center gap-2'><AiOutlineForm/>{content.contact.contactForm}</p>
+                    <p className='flex items-center gap-2'>  <AiOutlineForm/>{content.contact.contactForm}</p>
                     <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Metro</p>
                     <p className='flex items-center gap-2'><FiPhone/> 913.555.5555</p>
                 </Accordion.Body>
@@ -99,7 +99,7 @@ export default function Footer(){
                         </div>
                 </div>
                 <div>
-                    <p className='hidden md:block'>Copyright 2023 © Jays company. All right reserved</p>
+                    <p className='hidden md:block'>Jaime Fernandez 62 S 23 rd st Street Kansas City Ks 66102</p>
                 </div>
 
             </div>
