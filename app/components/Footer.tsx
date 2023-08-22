@@ -1,7 +1,6 @@
 'use client'
 
 import Logo from "./Logo";
-import { BsInstagram } from 'react-icons/bs'
 import Accordion from 'react-bootstrap/Accordion';
 import { FiMail, FiPhone } from 'react-icons/fi'
 import { AiOutlineForm } from 'react-icons/ai'
@@ -93,10 +92,7 @@ export default function Footer(){
             {/* SECOND SECTION MOBILE AND DESKTOP  */}
             <div className='flex md:justify-between py-14 items-center justify-center'>
                 <div className='flex justify-around gap-4 items-center'>
-                        <Logo />
-                        <div className='w-[35px] h-[35px] bg-white text-black rounded-[100%] box-border flex justify-center items-center'>
-                        <BsInstagram className='text-[25px]' />
-                        </div>
+                     <Link href='/'><Logo /></Link>
                 </div>
                 <div>
                     <p className='hidden md:block'>Jaime Fernandez 62 S 23 rd st Street Kansas City Ks 66102</p>
