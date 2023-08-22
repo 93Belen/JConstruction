@@ -13,7 +13,7 @@ const spanish = {
 }
 
  const english = {
-    woweare: '',
+    woweare: 'Proud leader of kitchen, bathroom , Driveway , all concrete jobs and basement remodeling in Kansas City KS and Kansas City MO.    ',
     ourprocess: '',
     whatwedo: '',
     process: {

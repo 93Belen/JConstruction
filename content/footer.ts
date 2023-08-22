@@ -6,7 +6,7 @@ const spanish = {
 }
 
  const english = {
-    intro: 'Jays Construction is a construction company that matches customers to the right contractor.',
+    intro: 'At JC Jays Construction LLC, we are a proud leader of kitchen, bathroom , driveway , all concrete jobs, and basement remodeling in the Kansas City area. Our clients enjoy outstanding customer service provided by industry veterans with 15+ years of experience.',
     contact: {
         contactForm: 'Contact Form',
     }
