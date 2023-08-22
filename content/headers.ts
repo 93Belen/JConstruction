@@ -57,7 +57,7 @@ const spanish = {
     contact: {
         h1: 'CONTACT US',
         h2: "LET'S CHAT!",
-        h3: "Have concrete projects and need help? Please reach out. We'd love to hear about it and provide help."
+        h3: "Have some projects and need help? Please reach out. We'd love to hear about it and provide help."
     },
     services: {
         h1: 'SERVICES',

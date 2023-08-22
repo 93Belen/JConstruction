@@ -21,9 +21,9 @@ export default function Contac(){
                 <div className='md:self-start md:w-[40%] xl:p-28 md:p-10'>
                     <h2 className={`text-orange ${anton.className} text-[4rem]`}>{content.contact.h2}</h2>
                     <p>{content.contact.h3}</p>
-                        <p className='flex items-center gap-2'><FiMail/> jaime@gmail.com</p>
-                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Metro</p>
-                    <p className='flex items-center gap-2'><FiPhone/> 913.555.5555</p>
+                    <p className='flex items-center gap-2'><FiMail/>  jaysconstructionkc@gmail.com</p>
+                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City</p>
+                    <p className='flex items-center gap-2'><FiPhone/> (913) 221-4088</p>
                 </div>
                 <div className='md:w-[60%] w-full md:p-10 xl:p-28 flex justify-center'>
                     <ContacForm/>

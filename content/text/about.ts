@@ -9,7 +9,7 @@ const spanish = {
         d: "Permítanos hacer realidad su visión. Comienza el proyecto.",
         e: "Todos los proyectos se completan a tiempo y dentro del presupuesto."
     },
-    contacttext: 'Cuéntenos su visión y Jay la hará realidad tal y como usted desea'
+    contacttext: 'Cuéntenos su visión y Jay la hará realidad tal y como usted desea.'
 };
 
 

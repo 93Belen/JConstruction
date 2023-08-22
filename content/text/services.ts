@@ -1,11 +1,23 @@
 const spanish = {
     services: {
-        a: '',
-        b: "",
-        c: "",
-        d: ""
+        a: {
+            name: 'Renovaciones de Cocina',
+            p: 'Nos enorgullece transformar cocinas ordinarias en espacios que reflejen su estilo y necesidades.'
+        },
+        b: {
+            name: 'Remodelación de Baños',
+            p: 'Descubra cómo podemos convertir su baño en un spa que complemente su estilo de vida.'
+        },
+        c: {
+            name: 'Conversión de Sótanos',
+            p: 'Descubra el potencial oculto de su hogar con nuestros servicios de remodelación de sótanos.'
+        },
+        d: {
+            name: 'Concreto y Entrada',
+            p: 'Con el proyecto de concreto que desea, entregamos artesanía de calidad que añade valor y durabilidad a su propiedad'
+        }
     },
-    contacttext: ''
+    contacttext: 'Cuéntenos su visión y Jay la hará realidad tal y como usted desea.'
 }
 
  const english = {
@@ -28,7 +40,7 @@ const spanish = {
         }
        
     },
-    contacttext: ''
+    contacttext: 'Tell us your vision and Jay will make it happen within your terms.'
 }
 
 export const selectedLanguage = {
