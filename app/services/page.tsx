@@ -61,7 +61,7 @@ export default function Services(){
                     </h2>
                 </div>
                 <div>
-                    <p className='text-black lg:w-[70%] text-[1.5rem]'>{content.contacttext}</p>
+                    <p className='text-black lg:w-[70%] text-[1.5rem] py-2'>{content.contacttext}</p>
                     <ContactButtonOrange />
                 </div>
                 </div>

@@ -18,9 +18,9 @@ export default function Contac(){
                 <h1 className={`text-white ${anton.className} text-[4rem]`}>{content.contact.h1}</h1>
             </section>
             <section className='bg-white flex flex-col md:flex-row gap-1 xl:gap-2 p-2 min-h-[50vh] justify-around items-center md:p-28'>
-                <div className='md:self-start md:w-[40%] xl:p-28 md:p-10'>
+                <div className='md:self-start md:w-[40%] xl:p-28 md:p-10 flex flex-col gap-1'>
                     <h2 className={`text-orange ${anton.className} text-[4rem]`}>{content.contact.h2}</h2>
-                    <p>{content.contact.h3}</p>
+                    <p className='text-[1.5rem]'>{content.contact.h3}</p>
                     <p className='flex items-center gap-2'><FiMail/>  jaysconstructionkc@gmail.com</p>
                     <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City</p>
                     <p className='flex items-center gap-2'><FiPhone/> (913) 221-4088</p>

@@ -14,7 +14,7 @@ const spanish = {
 
 
  const english = {
-    woweare: 'Proud leader of kitchen, bathroom , driveway , all concrete jobs, and basement remodeling in Kansas City.',
+    woweare: 'Proud leader of kitchen, bathroom, driveway , all concrete jobs, and basement remodeling in Kansas City.',
     ourprocess: 'Jay oversees and directs the entire process from start to finish. He finds the appropriate professional and completes the project on time.',
     whatwedo: 'By dealing directly with company\'s owner, our clients enjoy outstanding customer service provided by remodeling industry veterans.',
     process: {

@@ -26,7 +26,7 @@ export default function Home() {
           <div className='flex flex-col gap-4'>
             <h1 className={`text-orange text-[4rem] font-bold max-w-[600px] ${anton.className}`}>{contentHeader.home.h1}
             </h1>
-            <h2 className='text-white font-mono w-[50%] max-w-[800px]'>{content.slogan}</h2>
+            <h2 className='text-white font-mono w-[50%] max-w-[800px] text-[1.8rem]'>{content.slogan}</h2>
               <ContactButton/>
           </div>
 

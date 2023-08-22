@@ -20,15 +20,15 @@ export default function About(){
             <section className='flex flex-col md:flex-row'>
                 <div className='bg-blue md:bg-white p-6 2xl:px-20 md:py-20 2xl:py-28 md:w-1/3'>
                     <h2 className={`${anton.className} lg:text-[3rem] text-[2.5rem] md:text-blue min-[0px]:text-white`}>{contentHeader.about.h2.a}</h2>
-                    <p className=' md:text-black min-[0px]:text-white text-[1.2rem]'>{content.woweare}</p>
+                    <p className=' md:text-black min-[0px]:text-white text-[1.4rem] md:max-w-[400px]'>{content.woweare}</p>
                 </div>
                 <div className='bg-white p-6 md:order-last 2xl:px-20 md:py-20 2xl:py-28 md:w-1/3'>
                     <h2 className={`${anton.className} text-blue lg:text-[3rem] text-[2.5rem]`}>{contentHeader.about.h2.c}</h2>
-                    <p className='text-black text-[1.2rem]'>{content.whatwedo}</p>
+                    <p className='text-black text-[1.4rem] md:max-w-[400px]'>{content.whatwedo}</p>
                 </div>
                 <div className='bg-blue p-6 md:order-2 2xl:px-20 md:py-20 2xl:py-28 md:w-1/3'>
                     <h2 className={`${anton.className} text-white lg:text-[2.9rem] text-[2.5rem]`}>{contentHeader.about.h2.b}</h2>
-                    <p className='text-white text-[1.2rem]'>{content.ourprocess}</p>
+                    <p className='text-white text-[1.4rem] md:max-w-[400px]'>{content.ourprocess}</p>
                 </div>
             </section>
             <section className={`hidden md:block ${language === 'spanish' ? 'bg-[url("/process-map-spanish.png")]' : 'bg-[url("/process-map-english.png")]'} bg-contain bg-no-repeat h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] bg-center 2xl:mt-10`}>
@@ -68,7 +68,7 @@ export default function About(){
                     </h2>
                 </div>
                 <div>
-                    <p className='text-black lg:w-[70%] text-[1.5rem]'>{content.contacttext}</p>
+                    <p className='text-black lg:w-[70%] text-[1.5rem] py-4'>{content.contacttext}</p>
                     <ContactButtonOrange />
                 </div>
                 </div>
