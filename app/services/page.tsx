@@ -4,8 +4,10 @@ import { anton } from "../layout";
 import { useWebStore } from "../state/store";
 import { selectedLanguage } from "components/content/headers";
 import { selectedLanguage as textcontent } from "components/content/text/services";
-
-import { AiFillCar } from "react-icons/ai";
+import { MdOutlineKitchen } from 'react-icons/md'
+import { FaShower } from 'react-icons/fa'
+import { BsHouseDoor } from 'react-icons/bs'
+import { GiConcreteBag } from 'react-icons/gi'
 import ContactButtonOrange from "../components/ContactButtonOrange";
 
 export default function Services(){
@@ -22,33 +24,33 @@ export default function Services(){
             <section className='h-fit pt-10 md:pt-20 px-2 md:px-5'>
                 <h2 className={`${anton.className} text-white md:text-[4rem] text-[3.5rem] lg:pl-40`}>{contentHeader.services.h2}</h2>
                 <div className='flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-center xl:w-[80%] xl:gap-10 gap-6 max-w-[1500px] m-auto md:py-14'>
-                        <div className='px-4 py-3 flex flex-col gap-2 text-white'>
+                        <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
-                                <AiFillCar className='text-[50px] text-orange'/>
+                                <MdOutlineKitchen className='text-[50px] text-orange'/>
                             </div>
-                        <h4 className='font-bold'>First Service</h4>
-                        <p>Short text describing a feature of your product/service. Think about how it can benefit your potential customer. </p>
+                        <h4 className='font-bold'>{content.services.a.name}</h4>
+                        <p>{content.services.a.p}</p>
                     </div>
-                    <div className='px-4 py-3 flex flex-col gap-2 text-white'>
+                    <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
-                                <AiFillCar className='text-[50px] text-orange'/>
+                                <FaShower className='text-[50px] text-orange'/>
                             </div>
-                        <h4 className='font-bold'>First Service</h4>
-                        <p>Short text describing a feature of your product/service. Think about how it can benefit your potential customer. </p>
+                        <h4 className='font-bold'>{content.services.b.name}</h4>
+                        <p>{content.services.b.p}</p>
                     </div>
-                    <div className='px-4 py-3 flex flex-col gap-2 text-white'>
+                    <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
-                                <AiFillCar className='text-[50px] text-orange'/>
+                                <BsHouseDoor className='text-[50px] text-orange'/>
                             </div>
-                        <h4 className='font-bold'>First Service</h4>
-                        <p>Short text describing a feature of your product/service. Think about how it can benefit your potential customer. </p>
+                        <h4 className='font-bold'>{content.services.c.name}</h4>
+                        <p>{content.services.c.p}</p>
                     </div>
-                    <div className='px-4 py-3 flex flex-col gap-2 text-white'>
+                    <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
-                                <AiFillCar className='text-[50px] text-orange'/>
+                                <GiConcreteBag className='text-[50px] text-orange'/>
                             </div>
-                        <h4 className='font-bold'>First Service</h4>
-                        <p>Short text describing a feature of your product/service. Think about how it can benefit your potential customer. </p>
+                        <h4 className='font-bold'>{content.services.d.name}</h4>
+                        <p>{content.services.d.p}</p>
                     </div>
                 </div>
             </section>
@@ -59,7 +61,7 @@ export default function Services(){
                     </h2>
                 </div>
                 <div>
-                    <p className='text-black lg:w-[70%]'>Provide some assertive title and description that would persuade the customers to take some action, e.g., contact Jaime</p>
+                    <p className='text-black lg:w-[70%] text-[1.5rem]'>{content.contacttext}</p>
                     <ContactButtonOrange />
                 </div>
                 </div>
