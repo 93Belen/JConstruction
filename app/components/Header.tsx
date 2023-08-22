@@ -81,6 +81,7 @@ export default function Header(){
             <AnimatePresence>
                 <motion.div layout
                 initial={{ opacity: 0}}
+                onClick={toggleMwenu}
                 animate={{opacity: isOpen ? 1 : 0}}
                  className={`flex bg-blue top-[59px] left-0 absolute w-full flex-col h-[80vh] justify-around text-center items-center p-2 pb-10 text-[2rem]`}>
                 <Link className='text-white no-underline' href='/about'>{content.about}</Link>
