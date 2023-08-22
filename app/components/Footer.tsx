@@ -38,14 +38,14 @@ export default function Footer(){
                     <h3 className='font-bold text-[1.25rem]'>{content.contact.name}</h3>
                     <p className='flex items-center gap-2'><FiMail/> jaysconstructionkc@gmail.com</p>
                     <p className='flex items-center gap-2'> <AiOutlineForm/> <Link className='text-white no-underline' href='/contact'>{content.contact.contactForm} </Link> </p>
-                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Metro</p>
+                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Area</p>
                     <p className='flex items-center gap-2'><FiPhone/>  (913) 221-4088</p>
                 </div>
                 <div className='flex flex-col gap-2'>
                     <h3 className='font-bold text-[1.25rem]'>{content.navigation.name}</h3>
-                    <Link className='text-white no-underline' href=''>{contentNav.about}</Link>
-                    <Link className='text-white no-underline' href=''>{contentNav.contact}</Link>
-                    <Link className='text-white no-underline' href=''>{contentNav.services}</Link>
+                    <Link className='text-white no-underline' href='/about'>{contentNav.about}</Link>
+                    <Link className='text-white no-underline' href='contact'>{contentNav.contact}</Link>
+                    <Link className='text-white no-underline' href='services'>{contentNav.services}</Link>
                 </div>
                 <div>
                     <h3 className='font-bold text-[1.25rem]'>{content.language.name}</h3>
@@ -65,24 +65,24 @@ export default function Footer(){
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-                <Accordion.Header className='text-[1rem] font-bold'>CONTACT US</Accordion.Header>
+                <Accordion.Header className='text-[1rem] font-bold'>{content.contact.name}</Accordion.Header>
                 <Accordion.Body>
-                    <p className='flex items-center gap-2'><FiMail/> jaime@gmail.com</p>
-                    <p className='flex items-center gap-2'>  <AiOutlineForm/>{content.contact.contactForm}</p>
-                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Metro</p>
-                    <p className='flex items-center gap-2'><FiPhone/> 913.555.5555</p>
+                    <p className='flex items-center gap-2'><FiMail/> jaysconstructionkc@gmail.com</p>
+                    <p className='flex items-center gap-2'>  <AiOutlineForm/> <Link className='text-white no-underline' href='/contact'>{content.contact.contactForm} </Link></p>
+                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Area</p>
+                    <p className='flex items-center gap-2'><FiPhone/> (913) 221-4088</p>
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-                <Accordion.Header className='text-[1rem] font-bold'>NAVIGATION</Accordion.Header>
+                <Accordion.Header className='text-[1rem] font-bold'>{content.navigation.name}</Accordion.Header>
                 <Accordion.Body className='flex flex-col gap-4'>
-                    <Link className='text-white no-underline' href=''>{contentNav.about}</Link>
-                    <Link className='text-white no-underline' href=''>{contentNav.contact}</Link>
-                    <Link className='text-white no-underline' href=''>{contentNav.services}</Link>
+                    <Link className='text-white no-underline' href='/about'>{contentNav.about}</Link>
+                    <Link className='text-white no-underline' href='/contact'>{contentNav.contact}</Link>
+                    <Link className='text-white no-underline' href='/services'>{contentNav.services}</Link>
                 </Accordion.Body>
             </Accordion.Item>
       <div className='pl-5 pt-4'>
-        <p className='font-bold'>LANGUAGE</p>
+        <p className='font-bold'>{content.language.name}</p>
         <select value={language} onChange={changeLanguage} className='bg-blue text-white appearance-none border-white border-1 pb-[4rem] px-4 py-1 rounded-md' name="" id="">
             <option value="english">English</option>
             <option value="spanish">Español</option>
