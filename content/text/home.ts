@@ -1,41 +1,44 @@
 const spanish = {
-    slogan: '',
+    slogan: '', // Your translation of the slogan here
+    
     services: {
         a: {
-            name: '',
-            p: ''
+            name: 'Renovaciones de Cocina',
+            p: 'Nos enorgullece transformar cocinas ordinarias en espacios que reflejen su estilo y necesidades.'
         },
         b: {
-            name: '',
-            p: ''
+            name: 'Remodelación de Baños',
+            p: 'Descubra cómo podemos convertir su baño en un spa que complemente su estilo de vida.'
         },
         c: {
-            name: '',
-            p: ''
+            name: 'Conversión de Sótanos',
+            p: 'Descubra el potencial oculto de su hogar con nuestros servicios de remodelación de sótanos.'
         },
     },
-    numbers : {
+    
+    numbers: {
         a: {
-            name: '',
-            p: ''
+            name: 'Experiencia en Remodelación',
+            p: '' // Your translation of the description here
         },
         b: {
-            name: '',
-            p: ''
+            name: 'Proyectos Realizados',
+            p: '' // Your translation of the description here
         },
         c: {
-            name: '',
-            p: ''
+            name: 'Satisfacción del Cliente',
+            p: '' // Your translation of the description here
         },
     }
-}
+};
+
 
  const english = {
     slogan: '',
     services: {
         a: {
             name: 'Kitchen Renovations',
-            p: 'We take pride in transforming ordinary kitchens into stunning spaces that reflect your style and functionality needs.'
+            p: 'We take pride in transforming ordinary kitchens into spaces that reflect your style and functionality needs.'
         },
         b: {
             name: 'Bathroom Remodeling',

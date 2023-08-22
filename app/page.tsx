@@ -2,7 +2,9 @@
 
 import ContactButton from "./components/ContactButton";
 import { anton } from "./layout";
-import { AiFillCar } from 'react-icons/ai'
+import { MdOutlineKitchen } from 'react-icons/md'
+import { FaShower } from 'react-icons/fa'
+import { BsHouseDoor } from 'react-icons/bs'
 import { selectedLanguage as headers } from "components/content/headers";
 import { useWebStore } from "./state/store";
 import { selectedLanguage } from "components/content/text/home";
@@ -48,24 +50,24 @@ export default function Home() {
           <h2 className={`${anton.className} text-blue text-center md:text-[4rem] text-[3.5rem]`}>{contentHeader.home.h2}</h2>
           <div className='flex flex-col md:flex-row justify-center lg:w-[80%] xl:gap-9 max-w-[1200px] m-auto md:py-14'>
           <div className='flex flex-col gap-10 p-3'>
-              <div className='border-blue border-2 rounded-md px-4 py-3 flex flex-col gap-2 text-blue'>
-                  <AiFillCar className='text-[70px] text-orange'/>
-                  <h4 className='font-bold'>First Service</h4>
-                  <p>Short text describing a feature of your product/service. Think about how it can benefit your potential customer. </p>
+              <div className='border-blue border-2 rounded-md px-4 py-3 flex flex-col gap-2 text-blue h-full xl:w-[370px]'>
+                  <MdOutlineKitchen className='text-[70px] text-orange'/>
+                  <h4 className='font-bold text-[1.4rem]'>{content.services.a.name}</h4>
+                  <p>{content.services.a.p}</p>
               </div>
           </div>
           <div className='flex flex-col gap-10 p-3'>
-              <div className='border-blue border-2 rounded-md px-4 py-3 flex flex-col gap-2 text-blue'>
-                  <AiFillCar className='text-[70px] text-orange'/>
-                  <h4 className='font-bold'>First Service</h4>
-                  <p>Short text describing a feature of your product/service. Think about how it can benefit your potential customer. </p>
+              <div className='border-blue border-2 rounded-md px-4 py-3 flex flex-col gap-2 text-blue h-full xl:w-[370px]'>
+                  <FaShower className='text-[70px] text-orange'/>
+                  <h4 className='font-bold text-[1.4rem]'>{content.services.b.name}</h4>
+                  <p>{content.services.b.p}</p>
               </div>
           </div>
           <div className='flex flex-col gap-10 p-3'>
-              <div className='border-blue border-2 rounded-md px-4 py-3 flex flex-col gap-2 text-blue'>
-                  <AiFillCar className='text-[70px] text-orange'/>
-                  <h4 className='font-bold'>First Service</h4>
-                  <p>Short text describing a feature of your product/service. Think about how it can benefit your potential customer. </p>
+              <div className='border-blue border-2 rounded-md px-4 py-3 flex flex-col gap-2 text-blue h-full xl:w-[370px]'>
+                  <BsHouseDoor className='text-[70px] text-orange'/>
+                  <h4 className='font-bold text-[1.4rem]'>{content.services.c.name}</h4>
+                  <p>{content.services.c.p}</p>
               </div>
           </div>
           </div>
@@ -77,7 +79,7 @@ export default function Home() {
           <div className='text-white font-bold font-mono'>
             <h3 className='text-[4.5rem]'>
               <span className='text-orange font-bold'>+</span>
-              200
+              15
             </h3>
             <h4 className='font-bold text-[1.25rem]'>Satisfied customers</h4>
             <p className='text-[1rem]'>Over the last 3 years, we have worked with over 
@@ -86,7 +88,7 @@ export default function Home() {
           <div className='text-white font-bold font-mono'>
             <h3 className='text-[4.5rem]'>
               <span className='text-orange font-bold'>+</span>
-              500
+              400
             </h3>
             <h4 className='font-bold text-[1.25rem]'>Satisfied customers</h4>
             <p className='text-[1rem]'>Over the last 3 years, we have worked with over 
