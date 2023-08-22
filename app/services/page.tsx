@@ -24,28 +24,28 @@ export default function Services(){
             <section className='h-fit pt-10 md:pt-20 px-2 md:px-5'>
                 <h2 className={`${anton.className} text-white md:text-[4rem] text-[3.5rem] lg:pl-40`}>{contentHeader.services.h2}</h2>
                 <div className='flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-center xl:w-[80%] xl:gap-10 gap-6 max-w-[1500px] m-auto md:py-14'>
-                        <div className='px-4 py-3 flex flex-col gap-2 text-white w-1/4'>
+                        <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
                                 <MdOutlineKitchen className='text-[50px] text-orange'/>
                             </div>
                         <h4 className='font-bold'>{content.services.a.name}</h4>
                         <p>{content.services.a.p}</p>
                     </div>
-                    <div className='px-4 py-3 flex flex-col gap-2 text-white w-1/4'>
+                    <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
                                 <FaShower className='text-[50px] text-orange'/>
                             </div>
                         <h4 className='font-bold'>{content.services.b.name}</h4>
                         <p>{content.services.b.p}</p>
                     </div>
-                    <div className='px-4 py-3 flex flex-col gap-2 text-white w-1/4'>
+                    <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
                                 <BsHouseDoor className='text-[50px] text-orange'/>
                             </div>
                         <h4 className='font-bold'>{content.services.c.name}</h4>
                         <p>{content.services.c.p}</p>
                     </div>
-                    <div className='px-4 py-3 flex flex-col gap-2 text-white w-1/4'>
+                    <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
                                 <GiConcreteBag className='text-[50px] text-orange'/>
                             </div>
