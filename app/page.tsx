@@ -37,10 +37,9 @@ export default function Home() {
         <div className='h-[16rem] bg-[url("/home-hero.png")] bg-cover bg-center'>
         </div>
         <div className='flex flex-col gap-4 px-4 pb-20 pt-10'>
-            <h1 className={`text-orange text-[3.5rem] font-bold ${anton.className}`}>{contentHeader.home.h1}
+            <h1 className={`text-orange text-[3rem] font-bold ${anton.className}`}>{contentHeader.home.h1}
             </h1>
-            <h2 className='text-white font-mono w-[70%]'>Our experienced and reliable contractors will help
-              you with your concrete service needs.</h2>
+            <h2 className='text-white font-mono w-[90%] text-[1.4rem]'>{content.slogan}</h2>
               <ContactButton/>
         </div>
       </section>
@@ -73,9 +72,9 @@ export default function Home() {
       </section>
       {/* BY THE NUMBERS */}
       <section className='bg-[url("/smoke.png")] bg-bottom bg-no-repeat bg-cover h-fit pt-10 md:pt-20 px-5'>
-        <h2 className={`${anton.className} text-orange md:text-[4rem] text-[3.5rem] lg:pl-40`}>{contentHeader.home.h3}</h2>
+        <h2 className={`${anton.className} text-orange md:text-[4rem] text-[3rem] lg:pl-40 pb-2`}>{contentHeader.home.h3}</h2>
         <div className='flex flex-col md:flex-row justify-center xl:w-[80%] xl:gap-20 gap-6 max-w-[1500px] m-auto md:py-14'>
-          <div className='text-white font-bold font-mono  h-full md:w-[370px]'>
+          <div className='text-white font-bold font-mono  h-full md:w-[370px] flex flex-col gap-1'>
             <h3 className='text-[4.5rem]'>
               <span className='text-orange font-bold'>+</span>
               15
@@ -83,7 +82,7 @@ export default function Home() {
             <h4 className='font-bold text-[1.25rem]'>{content.numbers.a.name}</h4>
             <p className='text-[1rem]'>{content.numbers.a.p}</p>
           </div>
-          <div className='text-white font-bold font-mono  h-full md:w-[370px]'>
+          <div className='text-white font-bold font-mono  h-full md:w-[370px] flex flex-col gap-1'>
             <h3 className='text-[4.5rem]'>
               <span className='text-orange font-bold'>+</span>
               400
@@ -91,7 +90,7 @@ export default function Home() {
             <h4 className='font-bold text-[1.25rem]'>{content.numbers.b.name}</h4>
             <p className='text-[1rem]'>{content.numbers.b.p}</p>
           </div>
-          <div className='text-white font-bold font-mono  h-full md:w-[370px]'>
+          <div className='text-white font-bold font-mono  h-full md:w-[370px] flex flex-col gap-1'>
             <h3 className='text-[4.5rem]'>
               100
               <span className='text-orange font-bold'>%</span>
