@@ -1,5 +1,5 @@
 const spanish = {
-    slogan: '', // Your translation of the slogan here
+    slogan: 'Servicios de calidad de la mano de profesionales con más de 15 años de experiencia.', // Your translation of the slogan here
     
     services: {
         a: {
@@ -18,27 +18,27 @@ const spanish = {
     
     numbers: {
         a: {
-            name: 'Experiencia en Remodelación',
-            p: '' // Your translation of the description here
+            name: 'Años de experiencia',
+            p: 'Más de 15 años de experiencia en remodelación y 2 años con JC Jays Construction' // Your translation of the description here
         },
         b: {
             name: 'Proyectos Realizados',
-            p: '' // Your translation of the description here
+            p: 'Transformando hogares gracias a servicios excepcionales de remodelación en Kansas City.' // Your translation of the description here
         },
         c: {
             name: 'Satisfacción del Cliente',
-            p: '' // Your translation of the description here
+            p: 'Trato de calidad y resultados sobresalientes.' // Your translation of the description here
         },
     }
 };
 
 
  const english = {
-    slogan: '',
+    slogan: 'Outstanding customer service provided by remodeling industry veterans with 15+ years of experience.',
     services: {
         a: {
             name: 'Kitchen Renovations',
-            p: 'We take pride in transforming ordinary kitchens into spaces that reflect your style and functionality needs.'
+            p: 'We take pride in transforming ordinary kitchens into spaces that reflect your style and needs.'
         },
         b: {
             name: 'Bathroom Remodeling',
@@ -51,16 +51,16 @@ const spanish = {
     },
     numbers : {
         a: {
-            name: 'Remodeling experience',
-            p: ''
+            name: 'Years of experience',
+            p: 'More than 15 years of remodeling experience and 2 years under JC Jays Construction'
         },
         b: {
             name: 'Projects done',
-            p: ''
+            p: 'Transforming homes through exceptional remodeling services in Kansas City.'
         },
         c: {
             name: 'Customer satisfaction',
-            p: ''
+            p: 'Top-tier customer service and outstanding results.'
         },
     }
 }
