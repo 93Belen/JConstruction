@@ -29,25 +29,25 @@ export default function Footer(){
             {/* DESKTOP */}
             <div className='border-b-2 pb-[4rem] justify-between 2xl:pr-[30%] hidden md:flex text-[1rem] font-medium'>
                 <div className='max-w-[300px]'>
-                    <h3 className='font-bold text-[1.25rem]'>Jays Construction</h3>
+                    <h3 className='font-bold text-[1.25rem] pb-2'>Jays Construction</h3>
                     <p>{content.intro}</p>
 
                 </div>
-                <div>
-                    <h3 className='font-bold text-[1.25rem]'>{content.contact.name}</h3>
+                <div className='flex flex-col gap-2'>
+                    <h3 className='font-bold text-[1.25rem] pb-2'>{content.contact.name}</h3>
                     <p className='flex items-center gap-2'><FiMail/> jaysconstructionkc@gmail.com</p>
                     <p className='flex items-center gap-2'> <AiOutlineForm/> <Link className='text-white no-underline' href='/contact'>{content.contact.contactForm} </Link> </p>
                     <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Area</p>
                     <p className='flex items-center gap-2'><FiPhone/>  (913) 221-4088</p>
                 </div>
                 <div className='flex flex-col gap-2'>
-                    <h3 className='font-bold text-[1.25rem]'>{content.navigation.name}</h3>
+                    <h3 className='font-bold text-[1.25rem] pb-2'>{content.navigation.name}</h3>
                     <Link className='text-white no-underline' href='/about'>{contentNav.about}</Link>
                     <Link className='text-white no-underline' href='contact'>{contentNav.contact}</Link>
                     <Link className='text-white no-underline' href='services'>{contentNav.services}</Link>
                 </div>
                 <div>
-                    <h3 className='font-bold text-[1.25rem]'>{content.language.name}</h3>
+                    <h3 className='font-bold text-[1.25rem] pb-2'>{content.language.name}</h3>
                     <select value={language} onChange={changeLanguage} className='bg-blue text-white appearance-none border-white border-1 pb-[4rem] px-4 py-1 rounded-md' name="" id="">
                     <option defaultChecked={language === "english"} value="english">English</option>
                     <option defaultChecked={language === "spanish"} value="spanish">Español</option>

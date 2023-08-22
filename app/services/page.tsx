@@ -28,29 +28,29 @@ export default function Services(){
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
                                 <MdOutlineKitchen className='text-[50px] text-orange'/>
                             </div>
-                        <h4 className='font-bold'>{content.services.a.name}</h4>
+                        <h4 className='font-bold text-[1.5rem]'>{content.services.a.name}</h4>
                         <p>{content.services.a.p}</p>
                     </div>
                     <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
                                 <FaShower className='text-[50px] text-orange'/>
                             </div>
-                        <h4 className='font-bold'>{content.services.b.name}</h4>
-                        <p>{content.services.b.p}</p>
+                        <h4 className='font-bold text-[1.5rem]'>{content.services.b.name}</h4>
+                        <p className='text-[1rem]'>{content.services.b.p}</p>
                     </div>
                     <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
                                 <BsHouseDoor className='text-[50px] text-orange'/>
                             </div>
-                        <h4 className='font-bold'>{content.services.c.name}</h4>
-                        <p>{content.services.c.p}</p>
+                        <h4 className='font-bold text-[1.5rem]'>{content.services.c.name}</h4>
+                        <p className='text-[1rem]'>{content.services.c.p}</p>
                     </div>
                     <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
                                 <GiConcreteBag className='text-[50px] text-orange'/>
                             </div>
-                        <h4 className='font-bold'>{content.services.d.name}</h4>
-                        <p>{content.services.d.p}</p>
+                        <h4 className='font-bold text-[1.5rem]'>{content.services.d.name}</h4>
+                        <p className='text-[1rem]'>{content.services.d.p}</p>
                     </div>
                 </div>
             </section>
