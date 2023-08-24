@@ -2,7 +2,7 @@
 
 
 import Link from "next/link";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState, useEffect } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import { useWebStore } from "../state/store";
 import {selectedLanguage} from "components/content/header";
@@ -29,9 +29,22 @@ export default function Header(){
     const content = language === 'spanish' ? selectedLanguage.spanish : selectedLanguage.english
 
 
+    useEffect(() => {
+        if (isOpen) {
+          document.body.classList.add('disable-scroll');
+        } else {
+          document.body.classList.remove('disable-scroll');
+        }
+    
+        return () => {
+          // Clean up by removing the class when the component unmounts
+          document.body.classList.remove('disable-scroll');
+        };
+      }, [isOpen]);
+
 
     return (
-        <header className='bg-blue flex justify-between text-white font-mono py-[18px] md:px-[2rem] px-[1rem] items-center'>
+        <header className='bg-blue flex justify-between text-white font-mono py-[18px] md:px-[2rem] px-[1rem] items-center h-[9vh] md:h-auto'>
             <Link className='text-white no-underline' href='/'><h1 className='font-bold text-[1rem] md:text-[1.5rem]'>JAY'S CONSTRUCTION</h1></Link>
             <div className='hidden md:flex justify-around font-medium gap-[20px] text-[1rem]'>
                 <Link className='text-white no-underline border-b-2 border-b-orange border-opacity-0 hover:border-opacity-100 duration-[1s]' href='/about'>{content.about}</Link>
@@ -82,7 +95,7 @@ export default function Header(){
                 <motion.div layout
                 initial={{ opacity: 0}}
                 animate={{opacity: isOpen ? 1 : 0}}
-                 className={`flex bg-blue top-[59px] left-0 absolute w-full flex-col h-[80vh] justify-around text-center items-center p-2 pb-10 text-[2rem]`}>
+                 className={`flex bg-blue top-[8.8vh] left-0 absolute w-full flex-col h-[91.2vh] justify-around text-center items-center p-2 pb-10 text-[2rem]`}>
                 <Link onClick={toggleMwenu} className='text-white no-underline' href='/about'>{content.about}</Link>
                 <Link onClick={toggleMwenu} className='text-white no-underline' href='/contact'>{content.contact}</Link>
                 <Link onClick={toggleMwenu} className='text-white no-underline' href='/services'>{content.services}</Link>
@@ -90,6 +103,7 @@ export default function Header(){
                     <option value="english">English</option>
                     <option value="spanish">Español</option>
                 </select>
+                <div></div>
                 </motion.div>
             </AnimatePresence>
             </div>

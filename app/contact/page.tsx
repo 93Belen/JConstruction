@@ -1,7 +1,6 @@
 'use client'
 import { anton } from "../layout"
 import { FiMail, FiPhone } from 'react-icons/fi'
-import { AiOutlineForm } from 'react-icons/ai'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import ContacForm from "../components/ContactForm"
 import { useWebStore } from "../state/store"
@@ -15,7 +14,7 @@ export default function Contac(){
     return (
         <main>
             <section className='bg-[url("/contact.png")] h-[20rem] md:h-[30rem] w-full bg-cover bg-no-repeat bg-bottom flex justify-center items-center'>
-                <h1 className={`text-white ${anton.className} text-[4rem]`}>{content.contact.h1}</h1>
+                <h1 className={`text-white ${anton.className} text-[4rem]`}>{store.emailsent ? content.contact.emailSent : content.contact.h1}</h1>
             </section>
             <section className='bg-white flex flex-col md:flex-row gap-1 xl:gap-2 p-2 min-h-[50vh] justify-around items-center md:p-28'>
                 <div className='md:self-start md:w-[40%] xl:p-28 md:p-10 flex flex-col gap-1'>

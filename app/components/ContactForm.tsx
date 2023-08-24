@@ -2,7 +2,7 @@
 
 import { useWebStore } from "../state/store";
 import {selectedLanguage} from "components/content/form";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { montserrar } from "../layout";
 import {AiOutlineCheck} from 'react-icons/ai';
 import { motion, AnimatePresence } from "framer-motion";
@@ -13,6 +13,9 @@ export default function ContacForm(){
     const [name, setName] = useState<String>('')
     const [sent, setSent] = useState<boolean>(false);
     const store = useWebStore()
+    useEffect(() => {
+        store.toggleEmailSent(false)
+    },[])
     const language = store.language
     const content = language === 'spanish' ? selectedLanguage.spanish : selectedLanguage.english
 
@@ -32,6 +35,7 @@ export default function ContacForm(){
             console.log(data); // handle response, catch errors
             if(data.result === 'Success'){
                 setSent(true)
+                store.toggleEmailSent(true)
             }
         })
       }

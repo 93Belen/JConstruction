@@ -71,7 +71,7 @@ export default function Home() {
           </div>
       </section>
       {/* BY THE NUMBERS */}
-      <section className='bg-[url("/smoke.png")] bg-bottom bg-no-repeat bg-cover h-fit pt-10 md:pt-20 px-5'>
+      <section className='bg-[url("/smoke.png")] bg-bottom bg-no-repeat bg-cover h-fit pt-10 md:pt-20 px-5 pb-5 md:pb-1'>
         <h2 className={`${anton.className} text-orange md:text-[4rem] text-[3rem] lg:pl-40 pb-2`}>{contentHeader.home.h3}</h2>
         <div className='flex flex-col md:flex-row justify-center xl:w-[80%] xl:gap-20 gap-6 max-w-[1500px] m-auto md:py-14'>
           <div className='text-white font-bold font-mono  h-full md:w-[370px] flex flex-col gap-1'>
@@ -80,7 +80,7 @@ export default function Home() {
               15
             </h3>
             <h4 className='font-bold text-[1.25rem]'>{content.numbers.a.name}</h4>
-            <p className='text-[1rem]'>{content.numbers.a.p}</p>
+            <p className='text-[1rem] font-medium'>{content.numbers.a.p}</p>
           </div>
           <div className='text-white font-bold font-mono  h-full md:w-[370px] flex flex-col gap-1'>
             <h3 className='text-[4.5rem]'>
@@ -88,7 +88,7 @@ export default function Home() {
               400
             </h3>
             <h4 className='font-bold text-[1.25rem]'>{content.numbers.b.name}</h4>
-            <p className='text-[1rem]'>{content.numbers.b.p}</p>
+            <p className='text-[1rem] font-medium'>{content.numbers.b.p}</p>
           </div>
           <div className='text-white font-bold font-mono  h-full md:w-[370px] flex flex-col gap-1'>
             <h3 className='text-[4.5rem]'>
@@ -97,7 +97,7 @@ export default function Home() {
             
             </h3>
             <h4 className='font-bold text-[1.25rem]'>{content.numbers.c.name}</h4>
-            <p className='text-[1rem]'>{content.numbers.c.p}</p>
+            <p className='text-[1rem] font-medium'>{content.numbers.c.p}</p>
           </div>
         </div>
       </section>
