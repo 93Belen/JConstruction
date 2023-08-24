@@ -15,7 +15,7 @@ export const anton = Anton({
 export const montserrar = Montserrat({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['400', '500', '700'],
+  weight: ['400', '700'],
   variable: '--font-montserrat'
 })
 

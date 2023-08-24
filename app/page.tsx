@@ -80,7 +80,7 @@ export default function Home() {
               15
             </h3>
             <h4 className='font-bold text-[1.25rem]'>{content.numbers.a.name}</h4>
-            <p className='text-[1rem]'>{content.numbers.a.p}</p>
+            <p className='text-[1rem] font-medium'>{content.numbers.a.p}</p>
           </div>
           <div className='text-white font-bold font-mono  h-full md:w-[370px] flex flex-col gap-1'>
             <h3 className='text-[4.5rem]'>
@@ -88,7 +88,7 @@ export default function Home() {
               400
             </h3>
             <h4 className='font-bold text-[1.25rem]'>{content.numbers.b.name}</h4>
-            <p className='text-[1rem]'>{content.numbers.b.p}</p>
+            <p className='text-[1rem] font-medium'>{content.numbers.b.p}</p>
           </div>
           <div className='text-white font-bold font-mono  h-full md:w-[370px] flex flex-col gap-1'>
             <h3 className='text-[4.5rem]'>
@@ -97,7 +97,7 @@ export default function Home() {
             
             </h3>
             <h4 className='font-bold text-[1.25rem]'>{content.numbers.c.name}</h4>
-            <p className='text-[1rem]'>{content.numbers.c.p}</p>
+            <p className='text-[1rem] font-medium'>{content.numbers.c.p}</p>
           </div>
         </div>
       </section>

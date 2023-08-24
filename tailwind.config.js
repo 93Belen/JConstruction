@@ -25,7 +25,7 @@ module.exports = {
       'mono': ['var(--font-montserrat)']
     },
     fontWeight: {
-      'medium': '500',
+      'medium': '400',
       'bold': '700'
     },
     extend: {
