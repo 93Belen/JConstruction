@@ -34,3 +34,7 @@
 #accordion div h2 button::after{
   color: white;
 }
+
+.disable-scroll {
+  overflow: hidden;
+}
