@@ -71,7 +71,7 @@ export default function Home() {
           </div>
       </section>
       {/* BY THE NUMBERS */}
-      <section className='bg-[url("/smoke.png")] bg-bottom bg-no-repeat bg-cover h-fit pt-10 md:pt-20 px-5'>
+      <section className='bg-[url("/smoke.png")] bg-bottom bg-no-repeat bg-cover h-fit pt-10 md:pt-20 px-5 pb-5 md:pb-1'>
         <h2 className={`${anton.className} text-orange md:text-[4rem] text-[3rem] lg:pl-40 pb-2`}>{contentHeader.home.h3}</h2>
         <div className='flex flex-col md:flex-row justify-center xl:w-[80%] xl:gap-20 gap-6 max-w-[1500px] m-auto md:py-14'>
           <div className='text-white font-bold font-mono  h-full md:w-[370px] flex flex-col gap-1'>
