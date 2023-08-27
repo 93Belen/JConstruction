@@ -1,46 +1,46 @@
 const spanish = {
     services: {
         a: {
-            name: 'Renovaciones de Cocina',
-            p: 'Nos enorgullece transformar cocinas ordinarias en espacios que reflejen su estilo y necesidades.'
+            name: 'Renovaciones de Hogar',
+            p: 'Desde remodelaciones de baños, hasta renovaciones de cocinas y conversiones de sótanos, nuestros profesionales garantizan transformaciones de calidad.'
         },
         b: {
-            name: 'Remodelación de Baños',
-            p: 'Descubra cómo podemos convertir su baño en un spa que complemente su estilo de vida.'
+            name: 'Servicios de Concreto',
+            p: 'Ya sea reparación, diseño o creación de estructuras personalizadas, ofrecemos servicios de concreto duraderos respaldados por años de experiencia.'
         },
         c: {
-            name: 'Conversión de Sótanos',
-            p: 'Descubra el potencial oculto de su hogar con nuestros servicios de remodelación de sótanos.'
+            name: 'Cercado',
+            p: 'Nuestros servicios de cercado abarcan instalación profesional, reparación y mantenimiento, con un resultado seguro y bonito.'
         },
         d: {
-            name: 'Concreto y Entrada',
-            p: 'Con el proyecto de concreto que desea, entregamos artesanía de calidad que añade valor y durabilidad a su propiedad'
+            name: 'Servicios de Árboles',
+            p: 'Nuestro cuidado de árboles completo incluye poda, recorte, eliminación y mantenimiento, para asegurar que estén sanos y seguros.'
         }
     },
-    contacttext: 'Cuéntenos su visión y Jay la hará realidad tal y como usted desea.'
+    contacttext: 'Cuéntenos su visión, y Jay la hará realidad tal y como desea. ¡Contáctenos hoy para una consulta gratuita!'
 }
 
  const english = {
     services: {
         a: {
-            name: 'Kitchen Renovations',
-            p: 'We take pride in transforming ordinary kitchens into stunning spaces that reflect your style and functionality needs.'
+            name: 'Home Renovations',
+            p: 'From bathroom remodels, kitchen makeovers, and basement conversions, our professionals guarantee top-quality transformations.'
         },
         b: {
-            name: 'Bathroom Remodeling',
-            p: 'Discover how we can turn your bathroom into a spa-like haven that complements your lifestyle.'
+            name: 'Concrete Services',
+            p: 'Whether it\'s repairing, designing, or crafting custom structures, we deliver durable concrete services backed by years of experience.'
         },
         c: {
-            name: 'Basement Conversions',
-            p: 'Unlock the untapped potential of your home with our basement remodeling services.'
+            name: 'Fencing',
+            p: 'Our fencing services encompass professional installation, repair, and maintenance, ensuring secure and visual pleasing boundaries.'
         },
         d: {
-            name: 'Concrete and Driveway',
-            p: 'With any concrete-related tasks, we deliver quality craftsmanship that adds value and durability to your property.'
+            name: 'Tree Services',
+            p: 'We provide comprehensive tree care, including pruning, trimming, removal, and maintenance, to ensure they are healthy and safe.'
         }
        
     },
-    contacttext: 'Tell us your vision and Jay will make it happen within your terms.'
+    contacttext: 'Tell us your vision, and Jay will make it happen within your terms. Contact us today for a complimentary consultation!'
 }
 
 export const selectedLanguage = {
