@@ -11,7 +11,7 @@ const spanish = {
             b: "NUESTRO PROCESO",
             c: "QUÉ HACEMOS"
         },
-        h3: "¿Necesita ayuda con su próximo proyecto?",
+        h3: "¿Quiere que le ayudemos con su próximo proyecto de concreto?",
         process: {
             contact:'CONTÁCTENOS',
             consult:'CONSÚLTENOS',
@@ -23,7 +23,7 @@ const spanish = {
     contact: {
         h1: 'CONTÁCTENOS',
         h2: "¡HABLEMOS!",
-        h3: '¿Necesita ayuda con su proyecto? Póngase en contacto con nosotros. Nos encantaría ayudarle',
+        h3: '¿Necesita ayuda con su proyecto? Póngase en contacto con nosotros. Nos encantaría ayudarle.',
         emailSent: '¡Gracias por su mensaje!'
     },
     services: {
@@ -46,7 +46,7 @@ const spanish = {
             b: "OUR PROCESS",
             c: "WHAT WE DO"
         },
-        h3: "Need help with your next project?",
+        h3: "Want us to help with your next concrete project?",
         process: {
             contact: 'CONTACT',
             consult: 'CONSULT',
@@ -58,7 +58,7 @@ const spanish = {
     contact: {
         h1: 'CONTACT US',
         h2: "LET'S CHAT!",
-        h3: "Have some projects and need help? Please reach out. We'd love to hear about it and provide help.",
+        h3: "Have remodeling projects and need help? Please reach out. We’d love to hear about it and provide our assistance.",
         emailSent: 'Thank you for your message!'
     },
     services: {

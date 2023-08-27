@@ -37,7 +37,7 @@ export default function Footer(){
                     <h3 className='font-bold text-[1.25rem] pb-2'>{content.contact.name}</h3>
                     <p className='flex items-center gap-2'><FiMail/> jaysconstructionkc@gmail.com</p>
                     <p className='flex items-center gap-2'> <AiOutlineForm/> <Link className='text-white no-underline' href='/contact'>{content.contact.contactForm} </Link> </p>
-                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Area</p>
+                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City</p>
                     <p className='flex items-center gap-2'><FiPhone/>  (913) 221-4088</p>
                 </div>
                 <div className='flex flex-col gap-2'>
@@ -68,7 +68,7 @@ export default function Footer(){
                 <Accordion.Body>
                     <p className='flex items-center gap-2'><FiMail/> jaysconstructionkc@gmail.com</p>
                     <p className='flex items-center gap-2'>  <AiOutlineForm/> <Link className='text-white no-underline' href='/contact'>{content.contact.contactForm} </Link></p>
-                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City Area</p>
+                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City</p>
                     <p className='flex items-center gap-2'><FiPhone/> (913) 221-4088</p>
                 </Accordion.Body>
             </Accordion.Item>
