@@ -95,7 +95,7 @@ export default function Footer(){
                      <Link href='/'><Logo /></Link>
                 </div>
                 <div>
-                    <p className='hidden md:block'>Jaime Fernandez 62 S 23 rd st Street Kansas City Ks 66102</p>
+                    <p className='hidden md:block'>Jaime Fernandez 62 S 23rd St, Kansas City, KS 66102</p>
                 </div>
 
             </div>

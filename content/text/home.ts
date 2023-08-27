@@ -1,66 +1,66 @@
 const spanish = {
-    slogan: 'Servicios de calidad de la mano de profesionales con más de 15 años de experiencia.', // Your translation of the slogan here
+    slogan: 'Cuando neceiste una remodelación, concreto o paisajismo, Jay\'s Construction se asegura de que obtenga un servicio asequible, de calidad y confianza.', 
     
     services: {
         a: {
-            name: 'Renovaciones de Cocina',
-            p: 'Nos enorgullece transformar cocinas ordinarias en espacios que reflejen su estilo y necesidades.'
+            name: 'Renovaciones de Hogar',
+            p: 'Desde remodelaciones de baños, hasta renovaciones de cocinas y conversiones de sótanos, nuestros profesionales garantizan una transformación de calidad.'
         },
         b: {
-            name: 'Remodelación de Baños',
-            p: 'Descubra cómo podemos convertir su baño en un spa que complemente su estilo de vida.'
+            name: 'Servicios de Concreto',
+            p: 'Ya sea reparación, diseño o creaciones personalizadas, ofrecemos servicios de concreto duraderos respaldados por años de experiencia.'
         },
         c: {
-            name: 'Conversión de Sótanos',
-            p: 'Descubra el potencial oculto de su hogar con nuestros servicios de remodelación de sótanos.'
+            name: 'Paisajismo',
+            p: 'Dedicados a mejorar espacios exteriores, proporcionamos servicios de paisajismo que abarcan desde trabajos de cercado hasta la eliminación de árboles.'
         },
     },
     
     numbers: {
         a: {
-            name: 'Años de experiencia',
-            p: 'Más de 15 años de experiencia en remodelación y 2 años con JC Jays Construction' // Your translation of the description here
+            name: 'Experiencia en Renovaciones',
+            p: '15 años de experiencia en renovaciones de hogar y construcción.' // Your translation of the description here
         },
         b: {
             name: 'Proyectos Realizados',
-            p: 'Transformando hogares gracias a servicios excepcionales de remodelación en Kansas City.' // Your translation of the description here
+            p: 'Hemos completado más de cuatrocientos proyectos, incluyendo renovaciones de hogar, proyectos de concreto y paisajismo.' // Your translation of the description here
         },
         c: {
-            name: 'Satisfacción del Cliente',
-            p: 'Trato de calidad y resultados sobresalientes.' // Your translation of the description here
+            name: 'Satisfacción',
+            p: 'Nuestros clientes califican nuestros servicios con una tasa de satisfacción del 100%.' // Your translation of the description here
         },
     }
 };
 
 
  const english = {
-    slogan: 'Outstanding customer service provided by remodeling industry veterans with 15+ years of experience.',
+    slogan: 'When you have remodeling, concrete, or landscaping needs, Jay’s Construction will ensure you get affordable, quality, and reliable service. ',
     services: {
         a: {
-            name: 'Kitchen Renovations',
-            p: 'We take pride in transforming ordinary kitchens into spaces that reflect your style and needs.'
+            name: 'Home Renovations',
+            p: 'From bathroom remodels, kitchen makeovers, and basement conversions, our professionals guarantee top-quality transformations.'
         },
         b: {
-            name: 'Bathroom Remodeling',
-            p: 'Discover how we can turn your bathroom into a spa-like haven that complements your lifestyle.'
+            name: 'Concrete Services',
+            p: 'Whether it\'s repairing, designing, or crafting custom structures, we deliver durable concrete services backed by years of experience.'
         },
         c: {
-            name: 'Basement Conversions',
-            p: 'Unlock the untapped potential of your home with our basement remodeling services.'
+            name: 'Landscaping',
+            p: 'Dedicated to enhancing outdoor spaces, we provide landscaping services that encompass everything from fencing work to tree removal.'
         },
     },
     numbers : {
         a: {
-            name: 'Years of experience',
-            p: 'More than 15 years of remodeling experience and 2 years under JC Jays Construction'
+            name: 'Renovations Experience',
+            p: '15 years of working in the home renovations and construction business.'
         },
         b: {
-            name: 'Projects done',
-            p: 'Transforming homes through exceptional remodeling services in Kansas City.'
+            name: 'Completed Projects',
+            p: 'We have completed over four hundred projects, including home renovations, concrete projects, and landscaping.'
         },
         c: {
-            name: 'Customer satisfaction',
-            p: 'Top-tier customer service and outstanding results.'
+            name: 'Satisfaction Rate',
+            p: 'Our customers have rated us with a 100% satisfaction rate of our overall services.'
         },
     }
 }

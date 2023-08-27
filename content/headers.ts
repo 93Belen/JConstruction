@@ -1,6 +1,6 @@
 const spanish = {
     home: {
-        h1: "Encontramos a los mejores",
+        h1: "Encontramos a los mejores en KC",
         h2: "NUESTROS SERVICIOS",
         h3: "LAS CIFRAS"
     },
