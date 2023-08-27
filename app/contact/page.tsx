@@ -14,7 +14,8 @@ export default function Contac(){
     return (
         <main>
             <section className='bg-[url("/contact.png")] h-[20rem] md:h-[30rem] w-full bg-cover bg-no-repeat bg-bottom flex justify-center items-center'>
-                <h1 className={`text-white ${anton.className} text-[4rem]`}>{store.emailsent ? content.contact.emailSent : content.contact.h1}</h1>
+                <h1 className={`text-white ${anton.className} text-[4rem] hidden md:block`}>{store.emailsent ? content.contact.emailSent : content.contact.h1}</h1>
+                <h1 className={`text-white ${anton.className} text-[4rem] md:hidden`}>{store.emailsent ? content.contact.emailSentMobile : content.contact.h1}</h1>
             </section>
             <section className='bg-white flex flex-col md:flex-row gap-1 xl:gap-2 p-2 min-h-[50vh] justify-around items-center md:p-28'>
                 <div className='md:self-start md:w-[40%] xl:p-28 md:p-10 flex flex-col gap-1'>

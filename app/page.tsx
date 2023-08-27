@@ -2,11 +2,11 @@
 
 import ContactButton from "./components/ContactButton";
 import { anton } from "./layout";
-import { MdOutlineKitchen } from 'react-icons/md'
-import { FaShower } from 'react-icons/fa'
 import { BsHouseDoor } from 'react-icons/bs'
 import { selectedLanguage as headers } from "components/content/headers";
 import { useWebStore } from "./state/store";
+import { GiConcreteBag } from 'react-icons/gi'
+import { TbGardenCart} from 'react-icons/tb'
 import { selectedLanguage } from "components/content/text/home";
 
 
@@ -49,21 +49,21 @@ export default function Home() {
           <div className='flex flex-col md:flex-row justify-center lg:w-[80%] xl:gap-9 max-w-[1200px] m-auto md:py-14'>
           <div className='flex flex-col gap-10 p-3'>
               <div className='border-blue border-2 rounded-md px-4 py-3 flex flex-col gap-2 text-blue h-full xl:w-[370px]'>
-                  <MdOutlineKitchen className='text-[70px] text-orange'/>
+                  <BsHouseDoor className='text-[70px] text-orange'/>
                   <h4 className='font-bold text-[1.4rem]'>{content.services.a.name}</h4>
                   <p>{content.services.a.p}</p>
               </div>
           </div>
           <div className='flex flex-col gap-10 p-3'>
               <div className='border-blue border-2 rounded-md px-4 py-3 flex flex-col gap-2 text-blue h-full xl:w-[370px]'>
-                  <FaShower className='text-[70px] text-orange'/>
+                  <GiConcreteBag className='text-[70px] text-orange'/>
                   <h4 className='font-bold text-[1.4rem]'>{content.services.b.name}</h4>
                   <p>{content.services.b.p}</p>
               </div>
           </div>
           <div className='flex flex-col gap-10 p-3'>
               <div className='border-blue border-2 rounded-md px-4 py-3 flex flex-col gap-2 text-blue h-full xl:w-[370px]'>
-                  <BsHouseDoor className='text-[70px] text-orange'/>
+                  <TbGardenCart className='text-[70px] text-orange'/>
                   <h4 className='font-bold text-[1.4rem]'>{content.services.c.name}</h4>
                   <p>{content.services.c.p}</p>
               </div>

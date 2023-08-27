@@ -1,5 +1,5 @@
 const spanish = {
-    intro: 'JC Jays Construction LLC, es el líder en remodelación en Kansas City. Nuestros clientes disfrutan de un trato excepcional gracias a nuestros veteranos de la industria con más de 15 años de experiencia.',
+    intro: 'Jays Construction destaca como una empresa líder en Kansas City, especializada en encontrar al contratista adecuado para su proyecto.',
     contact: {
         contactForm: 'Formulario de Contacto',
         name: 'CONTÁCTENOS'
@@ -13,7 +13,7 @@ const spanish = {
 }
 
  const english = {
-    intro: 'At JC Jays Construction LLC, we are a proud leader of remodeling in the Kansas City area. Our clients enjoy outstanding customer service provided by industry veterans with 15+ years of experience.',
+    intro: 'Jays Construction is a top Kansas City contracting company that finds the right contractor for your project needs.',
     contact: {
         contactForm: 'Contact Form',
         name: 'CONTACT US'
