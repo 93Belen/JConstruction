@@ -24,7 +24,8 @@ const spanish = {
         h1: 'CONTÁCTENOS',
         h2: "¡HABLEMOS!",
         h3: '¿Necesita ayuda con su proyecto? Póngase en contacto con nosotros. Nos encantaría ayudarle.',
-        emailSent: '¡Gracias por su mensaje!'
+        emailSent: '¡Gracias por su mensaje!',
+        emailSentMobile: "¡Gracias!"
     },
     services: {
         h1: 'SERVICIOS',
@@ -59,7 +60,8 @@ const spanish = {
         h1: 'CONTACT US',
         h2: "LET'S CHAT!",
         h3: "Have remodeling projects and need help? Please reach out. We’d love to hear about it and provide our assistance.",
-        emailSent: 'Thank you for your message!'
+        emailSent: 'Thank you for your message!',
+        emailSentMobile: "Thank you!"
     },
     services: {
         h1: 'SERVICES',
