@@ -34,28 +34,28 @@ export default function About(){
             <section className={`hidden md:block ${language === 'spanish' ? 'bg-[url("/process-map-spanish.png")]' : 'bg-[url("/process-map-english.png")]'} bg-contain bg-no-repeat h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px] bg-center 2xl:mt-10`}>
 
             </section>
-            <section className='flex flex-col md:hidden text-white p-4'>
-                <div className='grid grid-cols-[30%_70%] grid-rows-[30%_70%]'>
+            <section className='flex flex-col md:hidden text-white p-4 h-fit gap-3'>
+                <div className='grid grid-cols-[30%_70%] grid-rows-[30%_70%] h-fit'>
                     <p className='text-orange row-span-2 col-start-1 justify-self-center text-[5rem]'>1</p>
                     <h3 className={`${anton.className} row-start-1 col-start-2`}>{contentHeader.about.process.contact}</h3>
                     <p className='self-start row-start-2 col-start-2'>{content.process.a}</p>
                 </div>
-                <div className='grid grid-cols-[30%_70%] grid-rows-[30%_70%]'>
+                <div className='grid grid-cols-[30%_70%] grid-rows-[30%_70%] h-fit'>
                     <p className='text-orange row-span-2 col-start-1 justify-self-center text-[5rem]'>2</p>
                     <h3 className={`${anton.className} row-start-1 col-start-2`}>{contentHeader.about.process.consult}</h3>
                     <p className='self-start row-start-2 col-start-2'>{content.process.b}</p>
                 </div>
-                <div className='grid grid-cols-[30%_70%] grid-rows-[30%_70%]'>
+                <div className='grid grid-cols-[30%_70%] grid-rows-[30%_70%] h-fit'>
                     <p className='text-orange row-span-2 col-start-1 justify-self-center text-[5rem]'>3</p>
                     <h3 className={`${anton.className} row-start-1 col-start-2`}>{contentHeader.about.process.connect}</h3>
                     <p className='self-start row-start-2 col-start-2'>{content.process.c}</p>
                 </div>
-                <div className='grid grid-cols-[30%_70%] grid-rows-[30%_70%]'>
+                <div className='grid grid-cols-[30%_70%] grid-rows-[20%_80%] h-fit'>
                     <p className='text-orange row-span-2 col-start-1 justify-self-center text-[5rem]'>4</p>
                     <h3 className={`${anton.className} row-start-1 col-start-2`}>{contentHeader.about.process.service}</h3>
-                    <p className='self-start row-start-2 col-start-2'>{content.process.d}</p>
+                    <p className='self-start row-start-2 col-start-2 h-fit'>{content.process.d}</p>
                 </div>
-                <div className='grid grid-cols-[30%_70%] grid-rows-[30%_70%]'>
+                <div className='grid grid-cols-[30%_70%] grid-rows-[30%_70%] h-fit'>
                     <p className='text-orange row-span-2 col-start-1 justify-self-center text-[5rem]'>5</p>
                     <h3 className={`${anton.className} row-start-1 col-start-2`}>{contentHeader.about.process.complete}</h3>
                     <p className='self-start row-start-2 col-start-2'>{content.process.e}</p>
