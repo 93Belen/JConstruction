@@ -22,7 +22,7 @@ export default function Services(){
                 <h1 className={`text-white ${anton.className} text-[4rem]`}>{contentHeader.services.h1}</h1>
             </section>
             <section className='h-fit pt-10 md:pt-20 px-2 md:px-5'>
-                <h2 className={`${anton.className} text-white md:text-[4rem] text-[3.5rem] lg:pl-40`}>{contentHeader.services.h2}</h2>
+                <h2 className={`${anton.className} text-white md:text-[4rem] text-[3rem] lg:pl-40`}>{contentHeader.services.h2}</h2>
                 <div className='flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-center xl:w-[80%] xl:gap-10 gap-6 max-w-[1500px] m-auto md:py-14'>
                         <div className='px-4 py-3 flex flex-col gap-2 text-white lg:w-[300px]'>
                             <div className='p-2 border-white border-1 rounded-sm w-fit'>
