@@ -66,10 +66,10 @@ export default function Footer(){
             <Accordion.Item eventKey="1">
                 <Accordion.Header className='text-[1rem] font-bold'>{content.contact.name}</Accordion.Header>
                 <Accordion.Body>
-                    <p className='flex items-center gap-2'><FiMail/> jaysconstructionkc@gmail.com</p>
-                    <p className='flex items-center gap-2'>  <AiOutlineForm/> <Link className='text-white no-underline' href='/contact'>{content.contact.contactForm} </Link></p>
-                    <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City</p>
-                    <p className='flex items-center gap-2'><FiPhone/> (913) 221-4088</p>
+                    <p className='flex items-center gap-2 text-[0.9rem]'><FiMail/> jaysconstructionkc@gmail.com</p>
+                    <p className='flex items-center gap-2 text-[1rem]'><AiOutlineForm/> <Link className='text-white no-underline' href='/contact'>{content.contact.contactForm} </Link></p>
+                    <p className='flex items-center gap-2 text-[1rem]'><HiOutlineLocationMarker/> Kansas City</p>
+                    <p className='flex items-center gap-2 text-[1rem]'><FiPhone/> (913) 221-4088</p>
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
