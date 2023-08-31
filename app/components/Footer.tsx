@@ -90,12 +90,13 @@ export default function Footer(){
     </Accordion>
             </section>
             {/* SECOND SECTION MOBILE AND DESKTOP  */}
-            <div className='flex md:justify-between py-14 items-center justify-center'>
-                <div className='flex justify-around gap-4 items-center'>
+            <div className='flex md:justify-between py-14 items-center justify-center md:flex-row flex-col gap-5 md:gap-0'>
+                <div className='flex items-center md:self-start'>
                      <Link href='/'><Logo /></Link>
                 </div>
-                <div>
+                <div className='flex flex-col'>
                     <p className='hidden md:block'>Jaime Fernandez 62 S 23rd St, Kansas City, KS 66102</p>
+                    <p className='italic text-[0.8rem]'>Designed and Developed by <a className='text-orange no-underline hover:text-white duration-[1s]' target="_blank" href='https://www.instagram.com/lbkc.web/'>LBKC</a> </p>
                 </div>
 
             </div>
