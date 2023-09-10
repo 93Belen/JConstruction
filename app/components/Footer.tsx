@@ -27,15 +27,15 @@ export default function Footer(){
     return (
         <section className='bg-blue h-fit text-white font-mono lg:px-[9rem] md:px-[3rem] px-[1rem] pt-[5rem] box-border w-full'>
             {/* DESKTOP */}
-            <div className='border-b-2 pb-[4rem] justify-between 2xl:pr-[30%] hidden md:flex text-[1rem] font-medium'>
+            <div className='border-b-2 pb-[4rem] justify-between 2xl:pr-[30%] hidden md:flex gap-2 text-[1rem] font-medium'>
                 <div className='max-w-[300px]'>
                     <h3 className='font-bold text-[1.25rem] pb-2'>Jays Construction</h3>
-                    <p>{content.intro}</p>
+                    <p className='max-w-[85%]' >{content.intro}</p>
 
                 </div>
                 <div className='flex flex-col gap-2'>
                     <h3 className='font-bold text-[1.25rem] pb-2'>{content.contact.name}</h3>
-                    <p className='flex items-center gap-2'><FiMail/> jaysconstructionkc@gmail.com</p>
+                    <p className='flex items-center gap-2 text-[0.9rem]'><FiMail/> jaysconstructionkc@gmail.com</p>
                     <p className='flex items-center gap-2'> <AiOutlineForm/> <Link className='text-white no-underline' href='/contact'>{content.contact.contactForm} </Link> </p>
                     <p className='flex items-center gap-2'><HiOutlineLocationMarker/> Kansas City</p>
                     <p className='flex items-center gap-2'><FiPhone/>  (913) 221-4088</p>
